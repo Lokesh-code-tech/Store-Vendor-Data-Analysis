@@ -21,7 +21,8 @@ The project uses **two CSV datasets**:
 
 ### 1️⃣ Purchase Data (Vendor → Store)
 Represents inventory procurement by stores from vendors.
-- Vendor Name / Vendor Number  
+- Vendor Name
+- Store Number
 - Product details (Brand, Description, Size)  
 - Purchase Quantity  
 - Purchase Price  
@@ -30,12 +31,13 @@ Represents inventory procurement by stores from vendors.
 
 ### 2️⃣ Sales Data (Store → Customer)
 Represents sales transactions at store level.
-- Store  
+- Store Number 
 - Product details (Brand, Description, Size)  
 - Sales Quantity  
 - Sales Price  
 - Sales Amount  
-- Sales Date  
+- Sales Date
+- Vendor Name
 
 ---
 
@@ -61,7 +63,6 @@ This pipeline mirrors a real-world data analytics workflow.
   - High cost
   - Long lead time
   - Low profit contribution
-  - High dependency
 
 ---
 
@@ -79,31 +80,17 @@ This pipeline mirrors a real-world data analytics workflow.
 
 ---
 
-## 📊 Key Metrics Used
-- Total Sales  
-- Total Purchase Cost  
-- Profit  
-- Margin %  
-- Average Lead Time  
-- Deadstock Quantity  
-- Sell-through Rate  
-
----
 
 ## 📈 Power BI Reporting
 The Power BI report includes:
-- Vendor performance dashboards
-- Store profitability and efficiency analysis
-- Sales vs profit relationship visualizations
-- Deadstock analysis by store and brand
-- Vendor and store risk identification tables
+- Vendor performance dashboards, that includes the visualtization related to the vendor.
 
 The dashboards are designed to support **business decision-making**.
 
 ---
 
 ## 🛠️ Tools & Technologies
-- **Python** (Pandas, NumPy, Matplotlib)
+- **Python** (Pandas, Matplotlib)
 - **SQL**
 - **Jupyter Notebook**
 - **Power BI**
